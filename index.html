@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="./styles.css">
+    <title></title>
+</head>
+<body>
+<h1 id="title">Form by Lourd</h1>
+<p id="description"> a form created by Lourd for freeCodeCamp</p>
+<form id="survey-form">
+  <fieldset>
+  <label id="name-label" for="name">Name<input class="firstFieldSet" id="name" type="text" placeholder="Name" required></label>
+  <label id="email-label" for"email">Email<input class="firstFieldSet" id="email" type="email" placeholder="Email" required></label>
+  <label id="number-label" for="number">Age<input  class="firstFieldSet" id="number" type="number" min="18" max="65" placeholder="Age"></label>
+</fieldset>
+
+  <fieldset>
+  <label id="relationshipQuestion">What relationship are you with Lourd?<select id="dropdown">
+    <option value="">Please select</option>
+    <option value="No Relationship">No Relationship</option>
+    <option value="Acquaintances">Acquaintances</option>
+    <option value="Friendships">Friendships</option>
+    <option value="Family/Relatives">Family/Relatives</option>
+    <option value="Partner/Spouse">Partner/Spouse</option></select></label>
+    </fieldset>
+  <fieldset id="genderField">
+    <legend id="genderQuestion">Please Choose Your Gender</legend>
+   <label for="Undecided"><input type="radio" id="Undecided" name="Gender" value="Undecided" class="radio-gender" checked> Undecided</label>
+<label for="Male"><input type="radio" id="Male" name="Gender" value="Male" class="radio-gender" > Male </label>
+<label for="Female"><input type="radio" id="Female" name="Gender" value="Female" class="radio-gender" > Female</label>
+    <label for="LGBTQ"><input type="radio" id="LGBTQ+" name="Gender" value="LGBTQ+" class="radio-gender" > LGBTQ+</label>
+  </fieldset>
+<fieldset>
+  <legend>What are your Hobbies? (Check if applicable)</legend> 
+    <label><input type="checkbox" id="theatreArts" name="hobbies" value="Theatre Arts">Theatre Arts</label>
+    <label><input type="checkbox" id="artsAndCrafts" name="hobbies" value="Arts and Crafts">Arts and Crafts</label>
+    <label><input type="checkbox" id="homeChores" name="hobbies" value="Home Chores">Home Chores</label>
+    <label><input type="checkbox" id="photography-Videography" name="hobbies" value="Photography/Videography">Photography/Videography</label>
+    <label><input type="checkbox" id="linguistics" name="hobbies" value="Linguistics">Linguistics</label>
+    <label><input type="checkbox" id="exerciseOrSports" name="hobbies" value="Exercise or Sports">Exercise or Sports</label>
+    <label><input type="checkbox" id="videoGames" name="hobbies" value="Video Games">Video Games</label>
+    <label><input type="checkbox" id="scienceAndMath" name="hobbies" value="Science and Math">Science and Math</label>
+</fieldset>
+<fieldset id="commentSection">
+  <legend>Any comments or suggestions?</legend>
+  <textarea placeholder="put your comments here..."></textarea>
+</fieldset>
+<input type="submit" id="submit" value="Submit" />
+
+</form>
+</body>
+</html>
